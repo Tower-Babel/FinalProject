@@ -1,0 +1,46 @@
+
+
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(245, 137, 6);
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: antiquewhite;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: rgb(253, 211, 160);
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(245, 137, 6);
+	text-align: center;
+}
+main{
+	width: 80%;
+	padding: 50px 25px;
+	margin: auto;
+}
+body{
+	background-color: rgb(250, 235, 215);
+}
+img{
+	height: 500px;
+	width: 500px;
+	border-radius: 15px;
+}
