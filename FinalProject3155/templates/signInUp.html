@@ -6,25 +6,29 @@
 <main>
 
 	<h2>Sign UP</h2>
-	<form >
-		<label for="first">First name: </label>
-		<input type="textbox" name="first"><br><br>
-		<label for="last">Last name: </label>
-		<input type="textbox" name="last"><br><br>
+	<form action="/signUP" method="POST">
+		<label for="userName">UserName: </label>
+		<input type="textbox" name="userName"><br><br>
 		
 		
-		<label for="password">Password </label>
-		<input type="textbox" name="password"><br><br>
+		<label for="Password">Password </label>
+		<input type="textbox" name="Password"><br><br>
 		
-		<button>Submit</button>
+		<input type="submit" value="Sign Up">
 	</form>
-
+	
 	<h3>OR</h3>
 	<h4>Login </h4>
-	<p>UserName: <input type="text" id="username"></p>
-	<p>Password: <input type="text" id="Password"></p>
-	<button>Submit</button>
-
+	<form method="POST">
+	<label for="username">UserName: </label>
+	<input type="textbox" name="username"><br><br>
+	
+	
+	<label for="password">Password </label>
+	<input type="textbox" name="password"><br><br>
+	
+	<input type="submit" value="Sign Up">
+	</form>
 </center>
 </main>
 

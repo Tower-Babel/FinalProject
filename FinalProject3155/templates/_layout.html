@@ -16,8 +16,16 @@
     <nav>
       <li><a class="active" href="/">Home</a></li>
       <li><a href="vision">Vision</a></li>
-      <li><a href="signInUp">SignIn/Up</a></li>
       <li><a href="blogs">Blogs</a></li>
+      {% block nav %}
+{% if userID != 0 %}
+<li><a href="signout">SignOut</a></li>
+{% else %}
+<li><a href="signInUp">SignIn/Up</a></li>
+{% endif %}
+{% endblock %}
+
+           
   
     </nav>
   </header>
