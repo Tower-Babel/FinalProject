@@ -1,0 +1,19 @@
+
+{% extends '_layout.html' %}
+
+{% block title %}About Us{% endblock %}
+{% block body %}
+	
+	<main>
+		<h1>Create Post</h1>
+		<form method="POST">
+			<label for="title">Title:</label>
+			<input type="text" name="title" required><br><br>
+			<label for="content">Content:</label><br>
+			<textarea name="content" rows="10" cols="50" required></textarea><br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+</body>
+</html>
+{% endblock %}
