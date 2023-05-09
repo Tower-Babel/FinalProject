@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS blog_db;
+
+CREATE DATABASE IF NOT EXISTS blog_db;
+
+USE blog_db;
+
+CREATE TABLE logins (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username varchar(255) DEFAULT NULL,
+  user_password varchar(255) DEFAULT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE posts (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  content VARCHAR(225),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  created_by VARCHAR(225)
+);
